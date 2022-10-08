@@ -22,7 +22,7 @@ const Slider = ({ slides }) => {
   }
 
   return (
-    <div id="gallery" className="max-w-[1240px] mx-auto min-h-[55vh]">
+    <div id="gallery" className="max-w-[1240px] mx-auto mb-9 min-h-[55vh]">
       <h1 className="text-2xl font-bold text-center p-4">
         Radgnarack Electric Bike Racks
       </h1>
