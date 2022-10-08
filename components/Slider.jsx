@@ -40,7 +40,7 @@ const Slider = ({ slides }) => {
               <FaArrowCircleLeft
                 onClick={prevSlide}
                 className="absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2]"
-                size={50}
+                size={35}
               />
               {index === current && (
                 <>
@@ -52,9 +52,9 @@ const Slider = ({ slides }) => {
                     objectFit="cover"
                     className="relative"
                   />
-                  <div className="absolute bottom-[50px] left-[50%] ml-[-83px] ">
+                  <div className="absolute bottom-[50px] left-[50%] ml-[-62px] ">
                     <button
-                      className="px-8 py-2 font-bold border border-[#000000] uppercase bg-[#FFC000] text-[#333333] hover:bg-[#8d6a02] hover:text-white shadow-xl rounded-md"
+                      className="px-3 py-1 font-bold border border-[#000000] uppercase bg-[#FFC000] text-[#333333] hover:bg-[#8d6a02] hover:text-white shadow-xl rounded-md"
                       onClick={() => router.push("/contact")}
                     >
                       ORDER NOW
@@ -65,7 +65,7 @@ const Slider = ({ slides }) => {
               <FaArrowCircleRight
                 onClick={nextSlide}
                 className="absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]"
-                size={50}
+                size={35}
               />
             </div>
           );
