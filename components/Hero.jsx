@@ -1,8 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { useRouter } from "next/router";
 
 const Hero = ({ message }) => {
+  const router = useRouter();
   return (
     <div className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img text-center">
       {/* overlay */}
@@ -16,7 +18,10 @@ const Hero = ({ message }) => {
           alt="Radgnarack"
         />
         <p className="py-5 text-xl">{message}</p>
-        <button className="px-8 py-2 font-bold border border-[#000000] uppercase bg-[#FFC000] text-[#333333] hover:bg-[#8d6a02] hover:text-white shadow-xl rounded-md">
+        <button
+          className="px-8 py-2 font-bold border border-[#000000] uppercase bg-[#FFC000] text-[#333333] hover:bg-[#8d6a02] hover:text-white shadow-xl rounded-md"
+          onClick={() => router.push("/contact")}
+        >
           Get yours now
         </button>
       </div>
