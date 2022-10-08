@@ -2,8 +2,11 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 import axios from "axios";
+import { useRouter } from "next/router";
+import { toast } from "react-toastify";
 
 const Contact = () => {
+  const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -23,9 +26,12 @@ const Contact = () => {
     try {
       const response = await axios(config);
       console.log(response);
-      if (response.data.status === 200) {
+      if (response.status === 200) {
         console.log("Success");
         reset();
+        // add success toast message
+        toast.success("Message sent successfully");
+        router.push("/");
       }
     } catch (err) {
       console.error(err);
