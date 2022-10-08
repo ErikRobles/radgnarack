@@ -31,7 +31,9 @@ const Contact = () => {
         reset();
         // add success toast message
         toast.success("Message sent successfully");
-        router.push("/");
+        setTimeout(() => {
+          router.push("/");
+        }, 3000);
       }
     } catch (err) {
       console.error(err);
