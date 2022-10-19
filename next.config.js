@@ -23,6 +23,14 @@ const nextConfig = {
       },
     ];
   },
+  redirects: async () => [
+    {
+      source: "/:path*",
+      has: [{ type: "host", value: "www.radgnarack.com" }],
+      destination: "https://radgnarack.com/:path*",
+      permanent: true,
+    },
+  ],
 };
 
 module.exports = nextConfig;
