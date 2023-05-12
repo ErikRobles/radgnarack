@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div>
       <HeroTwo heading="About Radgnarack" />
-      <div className="min-h-[50vh] p-6">
+      <div className="min-h-[50vh] p-6 custom-container">
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-2xl mb-3 font-bold">About Us</h1>
           <p className="text-lg">

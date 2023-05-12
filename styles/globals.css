@@ -14,3 +14,8 @@ html {
 .custom-img-two {
   background-image: url("/images/5.jpeg");
 }
+
+.custom-container {
+  width: 80%;
+  margin: 0 auto;
+  }

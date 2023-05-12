@@ -34,7 +34,7 @@ const Navbar = () => {
         <Link href="/">
           <a>
             <Image
-              src="/images/logo2.webp"
+              src="/images/logo-nav.webp"
               width={150}
               height={80}
               alt="Radgnarack logo"

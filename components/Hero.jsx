@@ -16,6 +16,7 @@ const Hero = ({ message }) => {
           width={467}
           height={268}
           alt="Radgnarack"
+          priority={true}
         />
         <p className="py-5 text-xl">{message}</p>
         <button
