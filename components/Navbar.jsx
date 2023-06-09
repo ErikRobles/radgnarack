@@ -43,23 +43,28 @@ const Navbar = () => {
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
           <li className="p-4">
-            <Link href="/">
-              <a>Home</a>
-            </Link>
-          </li>
-          <li className="p-4">
-            <Link href="/about">
-              <a>About</a>
-            </Link>
-          </li>
-          <li className="p-4">
             <Link href="/#gallery">
               <a>Racks</a>
             </Link>
           </li>
           <li className="p-4">
+            <Link href="/dealers">
+              <a>Dealers</a>
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link href="/events">
+              <a>Events</a>
+            </Link>
+          </li>
+          <li className="p-4">
             <Link href="/contact">
-              <a>Contact</a>
+              <a>Support</a>
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link href="/contact">
+              <a>Sales</a>
             </Link>
           </li>
         </ul>
@@ -83,26 +88,31 @@ const Navbar = () => {
           }
         >
           <ul>
-            <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href="/">
-                <a onClick={handleNav}>Home</a>
-              </Link>
-            </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href="/about">
-                <a onClick={handleNav}>About</a>
-              </Link>
-            </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href="/#gallery">
-                <a onClick={handleNav}>Racks</a>
-              </Link>
-            </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href="/contact">
-                <a onClick={handleNav}>Contact</a>
-              </Link>
-            </li>
+          <li className="p-4">
+            <Link href="/#gallery">
+              <a>Racks</a>
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link href="/dealers">
+              <a>Dealers</a>
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link href="/events">
+              <a>Events</a>
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link href="/contact">
+              <a>Support</a>
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link href="/contact">
+              <a>Sales</a>
+            </Link>
+          </li>
           </ul>
         </div>
       </div>
