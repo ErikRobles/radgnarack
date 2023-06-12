@@ -18,7 +18,7 @@ const About = () => {
           </p>
           <button
             className="px-8 py-2 font-bold uppercase bg-[#FFC000] text-[#333333] hover:bg-[#8d6a02] hover:text-white shadow-xl rounded-md w-full mt-5 mb-7"
-            onClick={() => router.push("/contact")}
+            onClick={() => router.push("/sales")}
           >
             Place your order
           </button>

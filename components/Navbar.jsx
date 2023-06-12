@@ -58,12 +58,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="p-4">
-            <Link href="/contact">
+            <Link href="/support">
               <a>Support</a>
             </Link>
           </li>
           <li className="p-4">
-            <Link href="/contact">
+            <Link href="/sales">
               <a>Sales</a>
             </Link>
           </li>
@@ -104,12 +104,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="p-4" onClick={() => setNav(!nav)}>
-            <Link href="/contact">
+            <Link href="/support">
               <a>Support</a>
             </Link>
           </li>
           <li className="p-4" onClick={() => setNav(!nav)}>
-            <Link href="/contact">
+            <Link href="/sales">
               <a>Sales</a>
             </Link>
           </li>
