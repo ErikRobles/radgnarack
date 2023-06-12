@@ -89,7 +89,7 @@ const Navbar = () => {
         >
           <ul>
           <li className="p-4">
-            <Link href="/#gallery">
+            <Link href="/#racks">
               <a>Racks</a>
             </Link>
           </li>
