@@ -34,7 +34,7 @@ const Products = () => {
               highest level of quality and durability possible to ensure that
               people can rest assured that their equipment is safe and secured
             </p>
-            <button className="rounded-md hover:border border-[#000000] bg-[#ffc000] hover:bg-[#8d6a02] hover:text-white px-3 py-2 mt-3" onClick={() => router.push("/contact")}>
+            <button className="uppercase rounded-md hover:border border-[#000000] bg-[#ffc000] hover:bg-[#8d6a02] hover:text-white px-3 py-2 mt-3" onClick={() => router.push("/contact")}>
               Order Here!
             </button>
           </div>
@@ -50,7 +50,7 @@ const Products = () => {
               product. We&apos;ll have a member of our engineering team get back
               to you as quickly as possible.
             </p>
-            <button className="rounded-md hover:border border-[#000000] bg-[#ffc000] hover:bg-[#8d6a02] hover:text-white px-3 py-2 mt-3" onClick={() => router.push("/contact")}>
+            <button className="uppercase rounded-md hover:border border-[#000000] bg-[#ffc000] hover:bg-[#8d6a02] hover:text-white px-3 py-2 mt-3" onClick={() => router.push("/contact")}>
               Order Here!
             </button>
           </div>
