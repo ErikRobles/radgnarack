@@ -43,7 +43,7 @@ const Navbar = () => {
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex uppercase font-bold">
           <li className="p-4">
-            <Link href="/#gallery">
+            <Link href="/#racks">
               <a>Racks</a>
             </Link>
           </li>

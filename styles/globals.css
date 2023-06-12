@@ -7,9 +7,14 @@ html {
   font-family: "Raleway", sans-serif;
 }
 
-.custom-img {
+/*.custom-img {
   background-image: url("/images/4.jpeg");
+}*/
+
+.custom-img {
+  background-image: url("/images/rackeng.png");
 }
+
 
 .custom-img-two {
   background-image: url("/images/5.jpeg");
@@ -20,8 +25,33 @@ html {
   margin: 0 auto;
   }
 
+  .custom-container-2 {
+  width: 90%;
+  margin: 0 auto;
+}
+
 @media(min-width: 850px) {
   .custom-container {
     max-width: 700px;
   }
 }
+
+@media(min-width: 1300px) {
+  .custom-container-2 {
+    width: 60%;
+  }
+}
+
+.image-wrapper {
+  box-sizing: content-box;
+}
+
+.image-wrapper > span {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 5px;
+}
+
+.section {
+  min-height: 100vh;
+  scroll-margin-top: 8rem;
+  }

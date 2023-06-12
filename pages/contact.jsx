@@ -7,7 +7,7 @@ const contact = () => {
     <div>
       <HeroTwo
         heading="Contact Us"
-        message="We'd love to hear from you. Fill in the form below and we will get in touch with you as quickly as possible."
+        message="Interested in getting a rack? Please fill out the form below and a member of our team will get back with you as soon as possible"
       />
       <Contact />
     </div>

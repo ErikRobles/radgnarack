@@ -107,7 +107,7 @@ const Contact = () => {
         <span className="text-red-500 font-bold">
           <ErrorMessage errors={errors} name="message" />
         </span>
-        <button className="rounded-md shadow-lg p-3 w-full bg-[#Ffc000] uppercase mt-9 mb-12">
+        <button className="rounded-md shadow-lg p-3 w-full bg-[#Ffc000] hover:bg-[#8d6a02] hover:text-white uppercase mt-9 mb-12">
           Submit
         </button>
       </form>
