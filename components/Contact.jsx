@@ -42,7 +42,7 @@ const Contact = () => {
 
   return (
     <div className="max-w-[1240px] m-auto p-4 min-h-[70vh]">
-      <h1 className="text-2xl font-bold text-center p-4">Contact</h1>
+      <h1 className="text-2xl text-center p-4">Contact</h1>
       <form
         onSubmit={handleSubmit(onSubmitForm)}
         className="max-w-[600px] m-auto"

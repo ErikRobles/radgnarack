@@ -88,27 +88,27 @@ const Navbar = () => {
           }
         >
           <ul>
-          <li className="p-4">
+          <li className="p-4" onClick={() => setNav(!nav)}>
             <Link href="/#racks">
               <a>Racks</a>
             </Link>
           </li>
-          <li className="p-4">
+          <li className="p-4" onClick={() => setNav(!nav)}>
             <Link href="/dealers">
               <a>Dealers</a>
             </Link>
           </li>
-          <li className="p-4">
+          <li className="p-4" onClick={() => setNav(!nav)}>
             <Link href="/events">
               <a>Events</a>
             </Link>
           </li>
-          <li className="p-4">
+          <li className="p-4" onClick={() => setNav(!nav)}>
             <Link href="/contact">
               <a>Support</a>
             </Link>
           </li>
-          <li className="p-4">
+          <li className="p-4" onClick={() => setNav(!nav)}>
             <Link href="/contact">
               <a>Sales</a>
             </Link>
