@@ -19,3 +19,9 @@ html {
   width: 80%;
   margin: 0 auto;
   }
+
+@media(min-width: 850px) {
+  .custom-container {
+    max-width: 750px;
+  }
+}

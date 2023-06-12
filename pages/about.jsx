@@ -8,10 +8,10 @@ const About = () => {
     <div>
       <HeroTwo heading="About Radgnarack" />
       <div className="min-h-[50vh] p-6 custom-container">
-        <div className="flex flex-col justify-center items-center gap-y-7">
-          <h1 className="text-2xl mb-3 font-bold">About Us</h1>
+        <div className="flex flex-col justify-center gap-y-7">
+          <h1 className="text-2xl mb-3 uppercase">About Us</h1>
           <p className="text-lg">
-          Rad Gnar Products was born out of a shared vision of Don Serra  and Tyson Creager.  Founded in 2022 by this duo of passionate entrepreneurs who aimed to revolutionize the way cyclists transport their electric bikes and other adventure equipment.
+          Rad Gnar Products was born out of a shared vision of Don Serra and Tyson Creager.  Founded in 2022 by this duo of passionate entrepreneurs who aimed to revolutionize the way cyclists transport their electric bikes and other adventure equipment.
           </p>
           <p className="text-lg">
           At Rad Gnar Products, we are committed to providing the highest quality adventure racks. Our goal is to make it easy and convenient for people to transport their equipment wherever they want to go. Whether you&apos;re a seasoned outdoor enthusiast or just getting started, we believe that Rad Gnar Products has the power to transform the way you begin your next adventure.

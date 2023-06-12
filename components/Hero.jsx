@@ -18,7 +18,7 @@ const Hero = ({ message }) => {
           alt="Radgnarack"
           priority={true}
         />
-        <p className="py-6 text-2xl">{message}</p>
+        <p className="py-6 text-2xl">Experience the convenience and simplicity of the <br />Radgnarack Electric Bike Rack</p>
         <button
           className="px-8 py-2 mt-5 font-bold border border-[#000000] uppercase bg-[#FFC000] text-[#333333] hover:bg-[#8d6a02] hover:text-white shadow-xl rounded-md"
           onClick={() => router.push("/contact")}
