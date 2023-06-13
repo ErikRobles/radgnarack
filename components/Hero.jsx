@@ -22,7 +22,7 @@ const Hero = ({ message }) => {
         <p><span className="uppercase font-bold text-2xl">Radgnarack Electric Bike Rack</span></p>
         <button
           className="px-8 py-2 mt-8 font-bold border border-[#000000] uppercase bg-[#FFC000] text-[#333333] hover:bg-[#8d6a02] hover:text-white shadow-xl rounded-md"
-          onClick={() => router.push("/contact")}
+          onClick={() => router.push("/sales")}
         >
           Get yours now
         </button>
