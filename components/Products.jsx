@@ -11,7 +11,7 @@ const Products = () => {
     >
       <div id="product-1">
         <div className="grid md:grid-cols-2  grid-cols-1 gap-8">
-          <div className="image-wrapper">
+          {/* <div className="image-wrapper"> */}
             <Image
               src="/images/img_1499.jpeg"
               width={500}
@@ -19,7 +19,7 @@ const Products = () => {
               alt="Radgnarack Electric Bike Rack"
               className="rounded-lg shadow-xl"
             />
-          </div>
+          {/* </div> */}
           <div className="text-wrapper">
             <h2 className="text-2xl mb-3">RadGnaRack</h2>
             <p className="text-xl">
@@ -34,7 +34,7 @@ const Products = () => {
               highest level of quality and durability possible to ensure that
               people can rest assured that their equipment is safe and secured
             </p>
-            <button className="uppercase rounded-md hover:border border-[#000000] bg-[#ffc000] hover:bg-[#8d6a02] hover:text-white px-3 py-2 mt-3" onClick={() => router.push("/contact")}>
+            <button className="uppercase rounded-md hover:border border-[#000000] bg-[#ffc000] hover:bg-[#8d6a02] hover:text-white px-3 py-2 mt-3" onClick={() => router.push("/sales")}>
               Order Here!
             </button>
           </div>
@@ -50,19 +50,21 @@ const Products = () => {
               product. We&apos;ll have a member of our engineering team get back
               to you as quickly as possible.
             </p>
-            <button className="uppercase rounded-md hover:border border-[#000000] bg-[#ffc000] hover:bg-[#8d6a02] hover:text-white px-3 py-2 mt-3" onClick={() => router.push("/contact")}>
+            <button className="uppercase rounded-md hover:border border-[#000000] bg-[#ffc000] hover:bg-[#8d6a02] hover:text-white px-3 py-2 mt-3" onClick={() => router.push("/sales")}>
               Order Here!
             </button>
           </div>
-          <div className="image-wrapper order-first md:order-last">
+          {/* <div className="image-wrapper order-first md:order-last"> */}
+          {/* <div className="order-first md:order-last"> */}
+
             <Image
               src="/images/4.jpeg"
               width={500}
               height={500}
               alt="Radgnarack Electric Bike Rack"
-              className="rounded-lg shadow-xl hidden"
+              className="rounded-lg shadow-xl order-first md:order-last"
             />
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </section>

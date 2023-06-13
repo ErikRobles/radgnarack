@@ -7,12 +7,12 @@ const FooterNav = () => {
         <ul className="text-white flex flex-row justify-center uppercase">
             <li className="p-4 hover:text-gray-500">
                 <Link href="/">
-                  <a>Home</a>
+                  Home
                 </Link>
             </li>
             <li className="p-4 hover:text-gray-500">
                 <Link href="/about">
-                  <a>About</a>
+                  About
                 </Link>
             </li>
         </ul>

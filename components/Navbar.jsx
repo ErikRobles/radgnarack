@@ -32,40 +32,31 @@ const Navbar = () => {
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/">
-          <a>
-            <Image
-              src="/images/logo-nav.webp"
-              width={150}
-              height={80}
-              alt="Radgnarack logo"
-            />
-          </a>
+          <Image
+            src="/images/logo-nav.webp"
+            width={150}
+            height={80}
+            alt="Radgnarack logo"
+          />
         </Link>
-        <ul style={{ color: `${textColor}` }} className="hidden sm:flex uppercase font-bold">
+        <ul
+          style={{ color: `${textColor}` }}
+          className="hidden sm:flex uppercase font-bold"
+        >
           <li className="p-4">
-            <Link href="/#racks">
-              <a>Racks</a>
-            </Link>
+            <Link href="/#racks">Racks</Link>
           </li>
           <li className="p-4">
-            <Link href="/dealers">
-              <a>Dealers</a>
-            </Link>
+            <Link href="/dealers">Dealers</Link>
           </li>
           <li className="p-4">
-            <Link href="/events">
-              <a>Events</a>
-            </Link>
+            <Link href="/events">Events</Link>
           </li>
           <li className="p-4">
-            <Link href="/support">
-              <a>Support</a>
-            </Link>
+            <Link href="/support">Support</Link>
           </li>
           <li className="p-4">
-            <Link href="/sales">
-              <a>Sales</a>
-            </Link>
+            <Link href="/sales">Sales</Link>
           </li>
         </ul>
         {/* Mobile button */}
@@ -88,31 +79,21 @@ const Navbar = () => {
           }
         >
           <ul>
-          <li className="p-4" onClick={() => setNav(!nav)}>
-            <Link href="/#racks">
-              <a>Racks</a>
-            </Link>
-          </li>
-          <li className="p-4" onClick={() => setNav(!nav)}>
-            <Link href="/dealers">
-              <a>Dealers</a>
-            </Link>
-          </li>
-          <li className="p-4" onClick={() => setNav(!nav)}>
-            <Link href="/events">
-              <a>Events</a>
-            </Link>
-          </li>
-          <li className="p-4" onClick={() => setNav(!nav)}>
-            <Link href="/support">
-              <a>Support</a>
-            </Link>
-          </li>
-          <li className="p-4" onClick={() => setNav(!nav)}>
-            <Link href="/sales">
-              <a>Sales</a>
-            </Link>
-          </li>
+            <li className="p-4" onClick={() => setNav(!nav)}>
+              <Link href="/#racks">Racks</Link>
+            </li>
+            <li className="p-4" onClick={() => setNav(!nav)}>
+              <Link href="/dealers">Dealers</Link>
+            </li>
+            <li className="p-4" onClick={() => setNav(!nav)}>
+              <Link href="/events">Events</Link>
+            </li>
+            <li className="p-4" onClick={() => setNav(!nav)}>
+              <Link href="/support">Support</Link>
+            </li>
+            <li className="p-4" onClick={() => setNav(!nav)}>
+              <Link href="/sales">Sales</Link>
+            </li>
           </ul>
         </div>
       </div>
