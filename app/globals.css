@@ -52,6 +52,8 @@ html {
 }
 
 .section {
-  min-height: 100vh;
-  scroll-margin-top: 8rem;
+  /* min-height: 100vh; */
+  /* scroll-padding-top: 120rem; */
+  position: relative;
+  top: -8.5rem;
   }

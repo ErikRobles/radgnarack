@@ -1,9 +1,10 @@
+"use client" 
 import Image from "next/image";
 import React from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
-const Hero = ({ message }) => {
+const Hero = () => {
   const router = useRouter();
   return (
     <div className="flex flex-col items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img text-center">

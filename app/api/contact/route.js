@@ -1,7 +1,8 @@
 import nodemailer from "nodemailer";
+import { NextResponse } from "next/server";
 
-export default async function handler(req, res) {
-  const { name, email, phone, subject, message } = req.body;
+export async function POST(request) {
+  const { name, email, phone, subject, message } = await request.json();
 
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -13,8 +14,10 @@ export default async function handler(req, res) {
     },
   });
 
+  let emailRes;
+
   try {
-    const emailRes = await transporter.sendMail({
+     emailRes = await transporter.sendMail({
       from: email,
       // to: process.env.EMAIL,
       to: process.env.EMAIL2,
@@ -29,7 +32,8 @@ export default async function handler(req, res) {
     console.log("Message sent", emailRes.messageId);
   } catch (err) {
     console.log(err);
+    console.error("Error sending email:", err.message);
+    console.error(err.stack);
   }
-
-  res.status(200).json(req.body);
+  return NextResponse.json({ success: true, messageId: emailRes.messageId });
 }

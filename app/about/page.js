@@ -1,6 +1,7 @@
+"use client";
 import React from "react";
 import HeroTwo from "../components/HeroTwo";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const About = () => {
   const router = useRouter();

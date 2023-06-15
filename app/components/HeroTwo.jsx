@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import React from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";

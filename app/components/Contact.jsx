@@ -1,8 +1,9 @@
+"use client"
 import React from "react";
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 import axios from "axios";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 
 const Contact = () => {
@@ -42,7 +43,7 @@ const Contact = () => {
 
   return (
     <div className="max-w-[1240px] m-auto p-4 min-h-[70vh]">
-      <h1 className="text-2xl font-bold text-center p-4">Contact</h1>
+      {/* <h1 className="text-2xl text-center p-4">Contact</h1> */}
       <form
         onSubmit={handleSubmit(onSubmitForm)}
         className="max-w-[600px] m-auto"
@@ -107,7 +108,7 @@ const Contact = () => {
         <span className="text-red-500 font-bold">
           <ErrorMessage errors={errors} name="message" />
         </span>
-        <button className="rounded-md shadow-lg p-3 w-full bg-[#Ffc000] uppercase mt-9 mb-12">
+        <button className="rounded-md shadow-lg p-3 w-full bg-[#Ffc000] hover:bg-[#8d6a02] hover:text-white uppercase mt-9 mb-12">
           Submit
         </button>
       </form>

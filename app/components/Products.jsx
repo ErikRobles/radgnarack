@@ -1,14 +1,15 @@
+"use client" 
 import React from "react";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const Products = () => {
   const router = useRouter();
   return (
     <section
-      id="racks"
-      className="flex flex-col justify-center custom-container-2 md:gap-24 gap-8 pb-24 pt-12 section"
+      className="flex flex-col justify-center custom-container-2 md:gap-12 gap-4 pb-24"
     >
+    <div id="racks" className="section"></div>
       <div id="product-1">
         <div className="grid md:grid-cols-2  grid-cols-1 gap-8">
           {/* <div className="image-wrapper"> */}

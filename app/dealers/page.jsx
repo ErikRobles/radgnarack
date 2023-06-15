@@ -9,4 +9,4 @@ const dealers = () => {
   )
 }
 
-export default dealers
+export default dealers;

@@ -1,6 +1,6 @@
 import React from "react";
-import Contact from "../components/Contact";
-import HeroTwo from "../components/HeroTwo";
+import Contact from "../components/Contact.jsx";
+import HeroTwo from "../components/HeroTwo.jsx";
 
 const sales = () => {
   return (
