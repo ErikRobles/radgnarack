@@ -7,7 +7,7 @@ const Products = () => {
   const router = useRouter();
   return (
     <section
-      className="flex flex-col justify-center custom-container-2 md:gap-12 gap-4 pb-24"
+      className="flex flex-col justify-center custom-container-2 md:gap-12 gap-4 pb-24 pt-12"
     >
     <div id="racks" className="section"></div>
       <div id="product-1">
