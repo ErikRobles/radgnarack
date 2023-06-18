@@ -9,8 +9,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img text-center">
       {/* overlay */}
-      <div className="top-0 left-0 right-0 bottom-0 absolute
-       w-full bg-black/70 z-[2]" />
+      <div className="absolute top-0 left-0 right-0 bottom-0 h-full bg-black/70 z-[2]" />
       <div className="p-5 text-white z-[2]">
         <Image
           src="/images/logo2.webp"
