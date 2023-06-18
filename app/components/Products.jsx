@@ -7,7 +7,7 @@ const Products = () => {
   const router = useRouter();
   return (
     <section
-      className="flex flex-col justify-center custom-container-2 md:gap-12 gap-4 pb-24 pt-12"
+      className="flex flex-col justify-center custom-container-2 md:gap-12 gap-12 pb-24 pt-12"
     >
     <div id="racks" className="section"></div>
       <div id="product-1">
@@ -22,7 +22,7 @@ const Products = () => {
             />
           {/* </div> */}
           <div className="text-wrapper">
-            <h2 className="text-2xl mb-3">RadGnaRack</h2>
+            <h2 className="text-2xl mb-3 font-bold">RadGnaRack</h2>
             <p className="text-xl">
               The RadGnaRack (Rad-Naar-Rack) is a modular hitch mounted
               equipment transportation device. The first module is designed for
@@ -35,7 +35,7 @@ const Products = () => {
               highest level of quality and durability possible to ensure that
               people can rest assured that their equipment is safe and secured
             </p>
-            <button className="uppercase rounded-md hover:border border-[#000000] bg-[#ffc000] hover:bg-[#8d6a02] hover:text-white px-3 py-2 mt-3" onClick={() => router.push("/sales")}>
+            <button className="uppercase rounded-md hover:border border-[#000000] bg-[#ffc000] hover:bg-[#8d6a02] hover:text-white px-3 py-2 mt-6" onClick={() => router.push("/sales")}>
               Order Here!
             </button>
           </div>
@@ -44,14 +44,14 @@ const Products = () => {
       <div id="product-2">
         <div className="grid md:grid-cols-2  grid-cols-1 gap-8">
           <div className="text-wrapper">
-            <h2 className="text-2xl mb-3">Custom Order</h2>
+            <h2 className="text-2xl mb-3 font-bold">Custom Order</h2>
             <p className="text-xl">
               We love to work with customers on creative products. Feel free to
               reach out to us if you&apos;d like to partner with us on your next
               product. We&apos;ll have a member of our engineering team get back
               to you as quickly as possible.
             </p>
-            <button className="uppercase rounded-md hover:border border-[#000000] bg-[#ffc000] hover:bg-[#8d6a02] hover:text-white px-3 py-2 mt-3" onClick={() => router.push("/sales")}>
+            <button className="uppercase rounded-md hover:border border-[#000000] bg-[#ffc000] hover:bg-[#8d6a02] hover:text-white px-3 py-2 mt-6" onClick={() => router.push("/sales")}>
               Order Here!
             </button>
           </div>
