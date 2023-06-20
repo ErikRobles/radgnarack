@@ -6,7 +6,7 @@ const page = () => {
     <section id="cookies" className="bg-black text-white">
       <div className="custom-container mx-auto px-5 pt-24">
         <div className="py-10">
-          <h1 className="text-3xl font-bold">Privacy for Radgnarack</h1>
+          <h1 className="text-3xl font-bold">Privacy Policy for Radgnarack</h1>
           <p>Last updated: June 20th 2023</p>
           <p>
             This Privacy Policy explains how Radgnarack (&quot;us,&quot;
