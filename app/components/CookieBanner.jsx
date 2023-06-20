@@ -33,7 +33,7 @@ export default function CookieBanner() {
                          bg-black rounded-lg shadow`}
     >
       <div className="text-center">
-        <Link href="/info/cookies">
+        <Link href="../cookies">
           <p>
             We use <span className="font-bold text-[#ffc000]">cookies</span> on
             our site.
