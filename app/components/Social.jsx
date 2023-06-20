@@ -2,6 +2,7 @@
 import React from "react";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 
 const Social = () => {
@@ -16,11 +17,11 @@ const Social = () => {
           <FaFacebook size={30} />
         </Link>
         <Link
-          href="https://www.linkedin.com/company/radgnarack/"
+          href="https://www.instagram.com/radgnarack/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaLinkedin size={30} />
+          <FaInstagram size={30} />
         </Link>
       </div>
     </div>
