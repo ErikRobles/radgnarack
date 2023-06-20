@@ -16,6 +16,16 @@ const FooterNav = () => {
                   About
                 </Link>
             </li>
+            <li className="p-4 hover:text-gray-500">
+                <Link href="/privacy">
+                  Privacy Policy
+                </Link>
+            </li>
+            <li className="p-4 hover:text-gray-500">
+                <Link href="/terms">
+                  Terms and Conditions
+                </Link>
+            </li>
         </ul>
     </nav>
   )
