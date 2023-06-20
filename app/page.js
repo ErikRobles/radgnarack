@@ -5,7 +5,6 @@ import Hero from "./components/Hero";
 // import { SliderData } from "../components/SliderData";
 import Products from "./components/Products";
 
-
 export default function Home() {
   return (
     <div>
