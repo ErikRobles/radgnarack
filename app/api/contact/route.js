@@ -1,5 +1,5 @@
 import nodemailer from "nodemailer";
-// import { NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
 export async function POST(request) {
   const { name, email, phone, subject, message } = await request.json();
@@ -42,9 +42,6 @@ export async function POST(request) {
     "Access-Control-Allow-Headers": "Content-Type",
     "Access-Control-Max-Age": "86400", // 24 hours (optional)
   };
-
-  return new Response(JSON.stringify({ success: true, messageId: emailRes.messageId }),{
-    headers,
-    status: 200,
-  });
+  
+  return NextResponse.json({ success: true, messageId: emailRes.messageId });
 }
