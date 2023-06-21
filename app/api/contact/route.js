@@ -1,5 +1,5 @@
 import nodemailer from "nodemailer";
-import { NextResponse } from "next/server";
+// import { NextResponse } from "next/server";
 
 export async function POST(request) {
   const { name, email, phone, subject, message } = await request.json();
@@ -35,5 +35,16 @@ export async function POST(request) {
     console.error("Error sending email:", err.message);
     console.error(err.stack);
   }
-  return NextResponse.json({ success: true, messageId: emailRes.messageId });
+  // Set CORS headers
+  const headers = {
+    "Access-Control-Allow-Origin": "*", // Replace * with the specific origin you want to allow, e.g., "https://your-nextjs-app.com"
+    "Access-Control-Allow-Methods": "POST",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Max-Age": "86400", // 24 hours (optional)
+  };
+
+  return new Response(JSON.stringify({ success: true, messageId: emailRes.messageId }),{
+    headers,
+    status: 200,
+  });
 }
