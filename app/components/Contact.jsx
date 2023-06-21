@@ -18,7 +18,8 @@ const Contact = () => {
   const onSubmitForm = async (values) => {
     let config = {
       method: "post",
-      url: `${process.env.NEXT_PUBLIC_API_URL}/contact`,
+      // Ensure the NEXT_PUBLIC_API_URL is also set to https://radgnarack.com/api in Vercel.com
+      url: `${process.env.NEXT_PUBLIC_API_URL}/contact`, 
       headers: {
         "status": 200,
        "Content-Type": "application/json",
