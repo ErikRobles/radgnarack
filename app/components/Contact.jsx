@@ -19,7 +19,8 @@ const Contact = () => {
     let config = {
       method: "post",
       // Ensure the NEXT_PUBLIC_API_URL is also set to https://radgnarack.com/api in Vercel.com
-      url: `${process.env.NEXT_PUBLIC_API_URL}/contact`, 
+      // url: `${process.env.NEXT_PUBLIC_API_URL}/contact`, 
+      url: "/api/contact", 
       headers: {
         "status": 200,
        "Content-Type": "application/json",
