@@ -36,5 +36,9 @@ export async function POST(request) {
     console.error(err.stack);
   }
     
-  return NextResponse.json({ success: true, messageId: emailRes.messageId });
+  return NextResponse.json({ success: true, messageId: emailRes.messageId }), {
+    headers: {
+      status: 200,
+    }
+  };
 }

@@ -20,7 +20,8 @@ const Contact = () => {
       method: "post",
       url: `${process.env.NEXT_PUBLIC_API_URL}/contact`,
       headers: {
-        "Content-Type": "application/json",
+        "status": 200,
+       "Content-Type": "application/json",
       },
       data: values,
     };
