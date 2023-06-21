@@ -36,15 +36,12 @@ export async function POST(request) {
     console.error(err.stack);
   }
     
-  return NextResponse.json({ success: true, messageId: emailRes.messageId }), {
+  return new NextResponse(JSON.stringify({ success: true, messageId: emailRes.messageId }), {
     headers: {
-      "status": 200,
-      // Allow cross origin 
-      "Access-Control-Allow-Origin": "https://radgnarack.com", // Replace * with the specific origin you want to allow, e.g., "https://your-nextjs-app.com"
+      "Access-Control-Allow-Origin": "https://radgnarack.com", // Replace with the specific origin you want to allow
       "Access-Control-Allow-Methods": "POST",
       "Access-Control-Allow-Headers": "Content-Type",
-      "Access-Control-Max-Age": "86400", // 24 hours (optional)
-
-    }
-  };
+      "Access-Control-Max-Age": "86400",
+    },
+  });
 }
