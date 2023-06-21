@@ -35,13 +35,6 @@ export async function POST(request) {
     console.error("Error sending email:", err.message);
     console.error(err.stack);
   }
-  // Set CORS headers
-  const headers = {
-    "Access-Control-Allow-Origin": "*", // Replace * with the specific origin you want to allow, e.g., "https://your-nextjs-app.com"
-    "Access-Control-Allow-Methods": "POST",
-    "Access-Control-Allow-Headers": "Content-Type",
-    "Access-Control-Max-Age": "86400", // 24 hours (optional)
-  };
-  
+    
   return NextResponse.json({ success: true, messageId: emailRes.messageId });
 }
