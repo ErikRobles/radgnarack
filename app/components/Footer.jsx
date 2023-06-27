@@ -11,7 +11,7 @@ const Footer = () => {
         
         <FooterNav />
         <Social />
-        <h4><span>Radgnarack </span>&copy; {year} All Rights Reserved.</h4>
+        <h4><span>Radgnarack </span>&copy; {year} <br /> All Rights Reserved.</h4>
       </div>
     </div>
   );

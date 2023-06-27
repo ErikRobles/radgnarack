@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { getLocalStorage, setLocalStorage } from "@/lib/storageHelper";
+import { getLocalStorage, setLocalStorage } from "../../lib/storageHelper";
 import { useState, useEffect } from "react";
 
 export default function CookieBanner() {

@@ -7,23 +7,27 @@ const Products = () => {
   const router = useRouter();
   return (
     <section
-      className="flex flex-col justify-center custom-container-2 md:gap-12 gap-12 pb-24 pt-12"
+      className="flex flex-col justify-center custom-container-2 gap-12 md:gap-20 pb-24 pt-6"
     >
     <div id="racks" className="section"></div>
+    <h1 className="text-3xl text-center uppercase">Racks</h1>
       <div id="product-1">
         <div className="grid md:grid-cols-2  grid-cols-1 gap-8">
           {/* <div className="image-wrapper"> */}
+          <div className="relative max-h-[400px]">
             <Image
-              src="/images/img_1499.jpeg"
-              width={500}
-              height={500}
+              src="/images/rack-by-radgnarack.png"
+              width={600}
+              height={600}
               alt="Radgnarack Electric Bike Rack"
-              className="rounded-lg shadow-xl"
+              className="rounded-lg pt-12 transition-all hover:scale-110 duration-300"
             />
-          {/* </div> */}
+            <Image src="/images/patentpending.png" width={125} height={125} alt="patent pending label" className="absolute right-3 -bottom-5 md:right-5 md:bottom-0 rotate-[5deg]" />
+          </div>
+          {/* </div> */} 
           <div className="text-wrapper">
             <h2 className="text-2xl mb-3 font-bold">RadGnaRack</h2>
-            <p className="text-xl">
+            <p className="text-lg text-justify">
               The RadGnaRack (Rad-Naar-Rack) is a modular hitch mounted
               equipment transportation device. The first module is designed for
               moving heavy bikes such as eBikes, but can just as easily used
@@ -45,7 +49,7 @@ const Products = () => {
         <div className="grid md:grid-cols-2  grid-cols-1 gap-8">
           <div className="text-wrapper">
             <h2 className="text-2xl mb-3 font-bold">Custom Order</h2>
-            <p className="text-xl">
+            <p className="text-lg text-justify">
               We love to work with customers on creative products. Feel free to
               reach out to us if you&apos;d like to partner with us on your next
               product. We&apos;ll have a member of our engineering team get back
@@ -55,16 +59,18 @@ const Products = () => {
               Order Here!
             </button>
           </div>
+         
           {/* <div className="image-wrapper order-first md:order-last"> */}
           {/* <div className="order-first md:order-last"> */}
-
+          <div className="md:order-last order-first max-w-[400px] max-h-[400px] min-w-[280px] min-h-[280px] overflow-hidden rounded-lg shadow-2xl">
             <Image
               src="/images/4.jpeg"
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               alt="Radgnarack Electric Bike Rack"
-              className="rounded-lg shadow-xl order-first md:order-last"
+              className="rounded-lg shadow-xl bg-cover bg-center object-cover object-center" 
             />
+          </div>
           {/* </div> */}
         </div>
       </div>

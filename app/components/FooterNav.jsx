@@ -5,7 +5,7 @@ import Link from 'next/link';
 const FooterNav = () => {
   return (
     <nav>
-        <ul className="text-white flex flex-row justify-center uppercase">
+        <ul className="text-white text-center text-xs md:text-lg flex flex-row flex-wrap justify-center uppercase">
             <li className="p-4 hover:text-gray-500">
                 <Link href="/">
                   Home

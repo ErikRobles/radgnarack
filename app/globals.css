@@ -20,6 +20,10 @@ html {
   background-image: url("/images/5.jpeg");
 }
 
+.custom-img-three {
+  background-image: url("/images/rackeng.png");
+}
+
 .custom-container {
   width: 90%;
   margin: 0 auto;
@@ -36,9 +40,11 @@ html {
   }
 }
 
+
 @media(min-width: 1300px) {
   .custom-container-2 {
     width: 60%;
+    margin: 0 auto;
   }
 }
 
@@ -56,4 +62,35 @@ html {
   /* scroll-padding-top: 120rem; */
   position: relative;
   top: -8.5rem;
+  }
+
+  .blog-post  figure  img {
+    border-radius: 15px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 300px;
+    float: left;
+    margin-right: 1rem;
+  }
+
+  .blog-post figure img::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .blog-post h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  @media(max-width: 768px) {
+    .blog-post .block-text {
+      font-size: 1.3rem;
+      }
+      .blog-post figure img {
+        max-width: 100%;
+        float: none;
+        margin-right: 0;
+      }
   }
