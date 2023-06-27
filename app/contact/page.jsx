@@ -2,7 +2,7 @@ import React from "react";
 import Contact from "../components/Contact";
 import HeroTwo from "../components/HeroTwo";
 
-const contact = ({heading, message}) => {
+const contact = () => {
   return (
     <div>
       <HeroTwo
