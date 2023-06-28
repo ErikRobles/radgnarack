@@ -2,7 +2,12 @@ import React from "react";
 import Contact from "../components/Contact";
 import HeroTwo from "../components/HeroTwo";
 
-const ContactPage = () => {
+type ContactPageProps = {
+  heading: string;
+  message: string;
+};
+
+const ContactPage = ({ heading, message }: ContactPageProps) => {
   return (
     <div>
       <HeroTwo
