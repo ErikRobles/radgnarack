@@ -1,15 +1,10 @@
 import { getPost } from "../../../sanity/sanity.utils";
-// import getPost from '../../../lib/getPost'; 
-// import HeroTwo from "../../components/HeroTwo";
 import BlockContent from "@sanity/block-content-to-react";
-
 
 type Props = {
     params: { post: string },
-    post: any
+    // post: any
 }
-
-
 
 export default async function Post({ params }: Props) {
     const slug = params.post;
