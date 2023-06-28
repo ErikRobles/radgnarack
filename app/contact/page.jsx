@@ -2,7 +2,7 @@ import React from "react";
 import Contact from "../components/Contact";
 import HeroTwo from "../components/HeroTwo";
 
-const contactPage = () => {
+const ContactPage = () => {
   return (
     <div>
       <HeroTwo
@@ -14,4 +14,4 @@ const contactPage = () => {
   );
 };
 
-export default contactPage;
+export default ContactPage;
