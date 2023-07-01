@@ -1,24 +1,27 @@
 import Link from "next/link";
 import { getPosts } from "../../sanity/sanity.utils";
+import BlockContent from "@sanity/block-content-to-react";
 
-const BlogList = async () => {
+const EventsList = async () => {
   const posts = await getPosts();
-  const nonEvents = posts.filter((post) =>
-    post.categories.every((cat) => cat.title !== "events")
+  const events = posts.filter((post) =>
+    post.categories.some((cat) => cat.title === "events")
   );
+
   return (
-    <div className="custom-container pb-12 flex md:flex-row flex-col gap-10">
-      {nonEvents.map((post) => (
-        <a href={`/posts/${post.slug.current}`} key={post._id}>
+    <div className="text-center m-auto pb-12 flex flex-col gap-10">
+      {events.map((post) => (
+        // <Link href={`/posts/${post.slug.current}`} key={post._id}>
           <div className="card shadow-xl p-3 max-w-[400px] border-solid border-2 rounded-lg boder-[#c0c0c0]">
-            <h2 className="text-center mb-5 text-xl font-bold">{post.title}</h2>
+          <h2 className="text-center mb-5 text-xl font-bold">{post.title}</h2>
             <img
               src={post.image}
               alt={post.alt}
-              className="h-auto w-[280px] max-w-lg rounded-lg text-center mx-auto hover:scale-105 transition"
+              className="h-auto max-w-[100%] rounded-lg text-center mx-auto hover:scale-105 transition"
             />
-            <div className="excerpt px-6 py-6 text-justify">
-              <p className="mb-8">{post.excerpt && post.excerpt} <span className="text-[#8d6a02]"> Read More...</span></p>
+            <div className="px-6 py-6 text-justify event-text" id="event">
+              <BlockContent blocks={post.body} projectId={"g91temd2"}
+                            dataset={"production"} className="justify block-text" />
               <hr />
               <p className="mt-8"><span className="font-bold text-[#8d6a02]">Categories</span>:{" "} 
                 {post.categories &&
@@ -41,13 +44,13 @@ const BlogList = async () => {
                     month: "long",
                     year: "numeric",
                 })}</p>
-                <p className="mt-3"><span className="font-bold text-[#8d6a02]">Author:</span> {post.author}</p>
+                {/* <p className="mt-3"><span className="font-bold text-[#8d6a02]">Author:</span> {post.author}</p> */}
             </div>
           </div>
-        </a>
+        // </Link>
       ))}
     </div>
   );
 };
 
-export default BlogList;
+export default EventsList;

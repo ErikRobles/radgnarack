@@ -94,3 +94,42 @@ html {
         margin-right: 0;
       }
   }
+
+  .event-text p a {
+    background-color: #ffc000;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 1rem!important;
+    cursor: pointer;
+  }
+
+  @media(max-width: 400px) {
+    .event-text p a {
+      font-size: 12px!important;}
+  }
+
+  @media(max-width: 325px) {
+    .event-text p a {
+      background-color: transparent;
+      padding: 0.5rem 1rem;
+      border-radius:0;
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: underline;
+      cursor: pointer;
+      margin-top: 1rem!important;
+    }
+  }
+
+  .event-text p {
+    margin-bottom: 1rem;
+  }
+
+  .event-text > p > a {
+    margin-top: 1rem!important;
+    width: 100%!important;
+    text-align: center!important;
+    margin: 0 auto!important;
+  }

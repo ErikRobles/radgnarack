@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import EventList from "../components/EventsList";
 
 const events = () => {
   return (
@@ -8,7 +10,7 @@ const events = () => {
       <div className="spacer pt-[90px]"></div>
 
       <h1 className="text-2xl uppercase">Events</h1>
-      <div>
+      {/* <div>
         <Image
           src="/images/summer-event.png"
           width={500}
@@ -23,7 +25,8 @@ const events = () => {
         className="max-w-[500px] text-center px-8 py-2 font-bold uppercase bg-[#FFC000] text-[#333333] hover:bg-[#8d6a02] hover:text-white shadow-xl rounded-md w-full mt-5 mb-7"
       >
         Click Here to Find Out More!
-      </Link>
+      </Link> */}
+      <EventList />
     </div>
   );
 };
