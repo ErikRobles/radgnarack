@@ -12,7 +12,7 @@ const EventsList = async () => {
     <div className="text-center m-auto pb-12 flex flex-col gap-10">
       {events.map((post) => (
         // <Link href={`/posts/${post.slug.current}`} key={post._id}>
-          <div className="card shadow-xl p-3 max-w-[400px] border-solid border-2 rounded-lg boder-[#c0c0c0]">
+          <div key={post._id} className="card shadow-xl p-3 max-w-[400px] border-solid border-2 rounded-lg boder-[#c0c0c0]">
           <h2 className="text-center mb-5 text-xl font-bold">{post.title}</h2>
             <img
               src={post.image}

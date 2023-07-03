@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
@@ -8,11 +8,18 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState("transparent");
   const [textColor, setTextColor] = useState("white");
+  const [dropdown, setDropdown] = useState(false);
   const dropdownRef = useRef(null);
-
 
   const handleNav = () => {
     setNav(!nav);
+    setDropdown(false);
+  };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setDropdown(false);
+    }
   };
 
   useEffect(() => {
@@ -26,20 +33,15 @@ const Navbar = () => {
       }
     };
     window.addEventListener("scroll", changeColor);
+
+    return () => {
+      window.removeEventListener("scroll", changeColor);
+    };
   }, []);
-
-  const handleDropdown = () => {
-      setNav(!nav);
-  };
-
-  const handleClickOutside = (event) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-      setNav(false);
-    }
-  };
 
   useEffect(() => {
     document.addEventListener("click", handleClickOutside);
+
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
@@ -73,8 +75,19 @@ const Navbar = () => {
             <Link href="/events">Events</Link>
           </li>
           <li className="p-4 relative" ref={dropdownRef}>
-            <span onClick={handleDropdown} className="cursor-pointer">Contact</span>
-            <ul className={nav ? "absolute left-0 mt-2 bg-[#222] border border-gray-200 shadow-lg rounded-lg cursor-pointer" : "hidden"}>
+            <span
+              onClick={() => setDropdown(!dropdown)}
+              className="cursor-pointer"
+            >
+              Contact
+            </span>
+            <ul
+              className={
+                dropdown
+                  ? "absolute left-0 mt-2 bg-[#222] border border-gray-200 shadow-lg rounded-lg cursor-pointer"
+                  : "hidden"
+              }
+            >
               <li className="p-2">
                 <Link href="/contact">Contact</Link>
               </li>
