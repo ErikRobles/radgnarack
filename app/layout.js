@@ -8,6 +8,12 @@ import GoogleAnalytics from './components/GoogleAnalytics';
 import "./globals.css";
 import CookieBanner from './components/CookieBanner';
 
+// create metadata for the page
+export const metadata = {
+  title: "Radgnarack | Racks for Electric Bikes",
+  description: "This site is about racks for electric bikes",
+}
+
 
 export default function RootLayout({ children }) {
   return (
