@@ -2,6 +2,24 @@ import Link from "next/link";
 import { getPosts } from "../../sanity/sanity.utils";
 import BlockContent from "@sanity/block-content-to-react";
 
+
+// Create a serializer that helps the user open a url in a new tab when a link is clicked
+const serializers = {
+  marks: {
+    link: ({ mark, children }) => {
+      const { blank, href } = mark;
+      return blank ? (
+        <a href={href} target="_blank" rel="noopener">
+          {children}
+        </a>
+      ) : (
+        <a href={href}>{children}</a>
+      );
+    },
+  },
+};
+
+
 const EventsList = async () => {
   const posts = await getPosts();
   const events = posts.filter((post) =>
@@ -21,7 +39,8 @@ const EventsList = async () => {
             />
             <div className="px-6 py-6 text-justify event-text" id="event">
               <BlockContent blocks={post.body} projectId={"g91temd2"}
-                            dataset={"production"} className="justify block-text" />
+                            dataset={"production"} serializers={serializers}
+                            className="justify block-text" />
               <hr />
               <p className="mt-8"><span className="font-bold text-[#8d6a02]">Categories</span>:{" "} 
                 {post.categories &&
