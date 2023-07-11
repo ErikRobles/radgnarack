@@ -11,7 +11,7 @@ import CookieBanner from './components/CookieBanner';
 // create metadata for the page
 export const metadata = {
   title: "Radgnarack | Racks for Electric Bikes",
-  description: "This site is about racks for electric bikes",
+  description: "This site features rad racks for electric bikes - Radgnarack",
 }
 
 
