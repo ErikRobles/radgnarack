@@ -5,6 +5,7 @@ export type Post = {
     publishedAt: Date;
     title: string;
     slug: string;
+    description: string;
     body: PortableTextBlock[];
     alt: string;
     author: string[];

@@ -59,6 +59,11 @@ export default defineType({
       title: 'Excerpt',
       type: 'string',
     }),
+    defineField({
+      name: 'description',
+      title: 'SEO Description And Keywords',
+      type: 'string',
+    }),
   ],
 
   preview: {

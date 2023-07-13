@@ -7,7 +7,7 @@ import {defineType, defineArrayMember} from 'sanity'
  *  {
  *    name: 'someName',
  *    title: 'Some title',
- *    type: 'blockContent'
+ *    type: 'blockContent' 
  *  }
  */
 export default defineType({

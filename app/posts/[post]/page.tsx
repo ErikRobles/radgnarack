@@ -1,9 +1,22 @@
 import { getPost } from "../../../sanity/sanity.utils";
 import BlockContent from "@sanity/block-content-to-react";
+import { Metadata, ResolvingMetadata } from 'next'
 
 type Props = {
     params: { post: string },
-    // post: any
+}
+
+export async function generateMetadata(
+    { params }: Props,
+    parent?: ResolvingMetadata
+): Promise<Metadata> {
+    const slug = params.post;
+    const post = await getPost(slug);
+
+    return {
+        title: post.title + ' | ' + 'Radgnarack',
+        description: post.description,
+    }
 }
 
 export default async function Post({ params }: Props) {
@@ -36,8 +49,8 @@ export default async function Post({ params }: Props) {
                                 year: "numeric",
                             })} </p>
                             <p><span className="font-bold text-[#8d6a02]">Categories:</span>  {post.categories &&
-                                post.categories.map((cat: string | {_id : string, title: string}) => {
-                                    if(typeof cat === "string") {
+                                post.categories.map((cat: string | { _id: string, title: string }) => {
+                                    if (typeof cat === "string") {
                                         return null; // or handle the string case accordingly
                                     }
                                     return <span key={cat._id} className="mr-3 px-2 py-1 rounded-xl bg-[#ffc000]">{cat.title}</span>;
@@ -50,4 +63,3 @@ export default async function Post({ params }: Props) {
         </>
     )
 }
-
