@@ -12,6 +12,7 @@ const Footer = () => {
         <FooterNav />
         <Social />
         <h4><span>Radgnarack </span>&copy; {year} <br /> All Rights Reserved.</h4>
+        <h4>Site Powered by <a href="https://algovisoftware.com/"  className="font-bold text-lg hover:text-xl transition-all" target="_blank" rel="noopener noreferrer"><span>Algovi Software</span></a></h4>
       </div>
     </div>
   );
