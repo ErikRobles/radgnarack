@@ -10,7 +10,7 @@ export async function getPosts(): Promise<Post[]> {
     });
 
     return client.fetch(
-        groq `
+        groq`
         *[_type == "post"] {
             _id,
             publishedAt,
@@ -32,7 +32,7 @@ export async function getPosts(): Promise<Post[]> {
     );
 }
 
-export async function getPost(slug: String): Promise<Post>{
+export async function getPost(slug: String): Promise<Post> {
     const client = createClient({
         projectId: "g91temd2",
         dataset: "production",
@@ -40,7 +40,7 @@ export async function getPost(slug: String): Promise<Post>{
     });
 
     return client.fetch(
-        groq `
+        groq`
         *[_type == "post" && slug.current == $slug][0] {
             _id,
             publishedAt,
@@ -58,6 +58,6 @@ export async function getPost(slug: String): Promise<Post>{
             "image": image.asset->url
         }
         `,
-        {slug}
+        { slug }
     );
 }

@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "app/components/product-filters.jsx", "app/components/product-sort.jsx", "app/components/product-grid.jsx", "app/components/cart-summary.tsx"  ],
   "exclude": [
     "node_modules"
   ]

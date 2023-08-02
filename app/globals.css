@@ -133,3 +133,27 @@ html {
     text-align: center!important;
     margin: 0 auto!important;
   }
+
+  .custom-checkbox {
+  position: relative;
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid #fcc000;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.custom-checkbox:checked {
+  background-color: #fcc000;
+}
+
+.custom-checkbox:checked svg {
+  display: block;
+}
+
+.custom-checkbox svg {
+  display: none;
+}

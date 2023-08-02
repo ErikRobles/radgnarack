@@ -1,8 +1,15 @@
-'use client';
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { useShoppingCart } from "use-shopping-cart";
+import {
+  AiOutlineMenu,
+  AiOutlineClose,
+  AiOutlineShoppingCart,
+} from "react-icons/ai";
+import { Button } from "./ui/button";
+import { ShoppingBag } from "lucide-react";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -10,6 +17,7 @@ const Navbar = () => {
   const [textColor, setTextColor] = useState("white");
   const [dropdown, setDropdown] = useState(false);
   const dropdownRef = useRef(null);
+  const { cartCount } = useShoppingCart();
 
   const handleNav = () => {
     setNav(!nav);
@@ -102,6 +110,15 @@ const Navbar = () => {
           <li className="p-4">
             <Link href="/blog">Blog</Link>
           </li>
+          <li className="pt-[8px]">
+            <Link href="/cart">
+              <Button size="sm" variant="ghost">
+                <ShoppingBag className="h-5 w-5" />
+                <span className="ml-2 text-sm font-bold">{cartCount}</span>
+                <span className="sr-only">Cart</span>
+              </Button>
+            </Link>
+          </li>
         </ul>
         {/* Mobile button */}
         <div
@@ -137,6 +154,15 @@ const Navbar = () => {
             </li>
             <li className="p-4" onClick={() => setNav(!nav)}>
               <Link href="/sales">Sales</Link>
+            </li>
+            <li className="p-4">
+              <Link href="/cart">
+                <Button size="sm" variant="ghost">
+                  <ShoppingBag className="h-5 w-5" />
+                  <span className="ml-2 text-sm font-bold">0</span>
+                  <span className="sr-only">Cart</span>
+                </Button>
+              </Link>
             </li>
           </ul>
         </div>
