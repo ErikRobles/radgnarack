@@ -2,15 +2,15 @@ import {
   LucideProps,
   Moon,
   SunMedium,
-  type Icon as LucideIcon,
+  Icon as LucideIcon,
 } from "lucide-react"
 
-export type Icon = LucideIcon
+// export type Icon = LucideIcon
 
 export const Icons = {
   sun: SunMedium,
   moon: Moon,
-  logo: (props: LucideProps) => (
+  logo: (LucideProps) => (
     <svg
       height="800px"
       width="800px"
